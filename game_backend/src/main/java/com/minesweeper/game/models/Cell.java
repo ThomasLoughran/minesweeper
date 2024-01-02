@@ -14,5 +14,14 @@ public class Cell {
     @JoinColumn(name = "game_id")
     private Game game;
 
+    @Column
+    private int cellNumber;
+
+    @Column
+    private boolean isOpened;
+
+    @Column
+    private CellState cellState;
+
 
 }
