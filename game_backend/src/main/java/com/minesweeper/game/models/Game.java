@@ -17,4 +17,23 @@ public class Game {
     @JsonIgnoreProperties({"game"})
     private List<Cell> cellsList;
 
+    public Game(){
+
+    }
+
+    public long getId(){
+        return id;
+    }
+
+    public List<Cell> getCellsList() {
+        return cellsList;
+    }
+
+    public void setCellsList(List<Cell> cellsList) {
+        this.cellsList = cellsList;
+    }
+
+    public void addCell(Cell cell){
+        this.cellsList.add(cell);
+    }
 }
