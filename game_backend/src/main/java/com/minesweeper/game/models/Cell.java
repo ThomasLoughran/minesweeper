@@ -3,7 +3,7 @@ package com.minesweeper.game.models;
 import jakarta.persistence.*;
 
 @Entity
-@Table
+@Table(name = "cells")
 public class Cell {
 
     @Id
