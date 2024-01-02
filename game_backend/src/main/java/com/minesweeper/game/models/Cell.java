@@ -1,5 +1,6 @@
 package com.minesweeper.game.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
 @Entity
@@ -12,6 +13,7 @@ public class Cell {
 
     @ManyToOne
     @JoinColumn(name = "game_id")
+    @JsonIgnoreProperties({"cellsList"})
     private Game game;
 
     @Column

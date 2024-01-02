@@ -1,5 +1,6 @@
 package com.minesweeper.game.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
@@ -16,6 +17,7 @@ public class Game {
 
     @OneToMany(mappedBy = "game")
     @JsonIgnoreProperties({"game"})
+    @JsonIgnore
     private List<Cell> cellsList;
 
     public Game(){

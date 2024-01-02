@@ -31,6 +31,7 @@ public class GameService {
         for (int i = 0; i < numberOfCells; i++){
             Cell cell = new Cell();
             cell.setCellNumber(i);
+            cell.setGame(game);
             cellRepository.save(cell);
             game.addCell(cell);
         }
