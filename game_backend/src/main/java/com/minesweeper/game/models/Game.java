@@ -3,6 +3,7 @@ package com.minesweeper.game.models;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -18,7 +19,7 @@ public class Game {
     private List<Cell> cellsList;
 
     public Game(){
-
+        this.cellsList = new ArrayList<>();
     }
 
     public long getId(){

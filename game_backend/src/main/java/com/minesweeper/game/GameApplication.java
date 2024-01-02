@@ -14,6 +14,7 @@ public class GameApplication {
 
 //TODO
 //restful routes
+// cell does not have a game_id
 //change cell state
 
 
